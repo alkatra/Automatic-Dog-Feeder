@@ -1,0 +1,5 @@
+# Request
+---
+# Response
+float32 food_weight
+float32 water_weight
