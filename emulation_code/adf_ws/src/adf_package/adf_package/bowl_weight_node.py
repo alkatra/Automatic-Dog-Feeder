@@ -37,22 +37,20 @@ class BowlWeightNode(Node):
     def food_actuator_callback(self, msg):
         """
         Callback function for the food actuator status subscriber.
-        Emulates the increment/decrement of food weight based on the actuator status.
+        Emulates the increment of food weight based on the actuator status.
         """
         if msg.data:
             self.current_food_weight += 25
-        else:
-            self.current_food_weight -= 25
+
 
     def water_actuator_callback(self, msg):
         """
         Callback function for the water actuator status subscriber.
-        Emulates the increment/decrement of water weight based on the actuator status.
+        Emulates the increment of water weight based on the actuator status.
         """
         if msg.data:
             self.current_water_weight += 25
-        else:
-            self.current_water_weight -= 25
+
 
     def motion_status_callback(self, msg):
         """
